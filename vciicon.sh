@@ -1,8 +1,8 @@
 echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
-convert iconTex.png -resize 130 -gravity center iconTex.png
+convert iconTex.png -resize 122x81\! -gravity center iconTex.png
 convert iconTex.png -gravity center -crop 128x128 iconTex.tga
-composite -gravity center ./resources/iconTex.png icon: iconTex.png
+composite -geometry +3+16 iconTex.tga ./resources/iconTex.png iconTex.bmp
 echo "\n"
 echo "Done."
