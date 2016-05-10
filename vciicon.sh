@@ -29,7 +29,7 @@ then
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite bootTvTex.png
 fi
 
 if [ "$ARGUMENT" = "N64" ]
@@ -43,7 +43,7 @@ then
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite bootTvTex.png
 fi
 
 if [ "$ARGUMENT" = "NES" ]
@@ -57,7 +57,7 @@ then
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite bootTvTex.png
 fi
 
 if [ "$ARGUMENT" = "SNES" ]
@@ -71,7 +71,7 @@ then
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite bootTvTex.png
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
