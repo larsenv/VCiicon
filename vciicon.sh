@@ -10,7 +10,7 @@ rm -r "meta"
 
 mkdir "meta"
 
-if [ $# 1 ]
+if (( $# != 1 ))
 then
     echo "z"
     exit 1
