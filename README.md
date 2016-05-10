@@ -29,6 +29,7 @@ If you have a meta folder for any Virtual Console game for platforms other than 
  <li>Make a banner with this.</li>
  <li>Make an XML with this.</li>
  <li>Make this work with Windows.</li>
+ <li>Make this work with the other Virtual Console Platforms.</li>
 </ul>
 
 <b>Download Here:</b>
