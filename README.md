@@ -13,7 +13,7 @@ For now you need to install ImageMagick in order to use this. Also, please note 
 <ol>
  <li>Find a good title screen image of your game.</li>
  <li>Name it as iconTex.png (or other picture extension).</li>
- <li>Run the script and it will do the rest. It will save it in the Meta Folder.</li>
+ <li>Run the script (sh vciicon.sh "name of platform") and it will do the rest. It will save it in the Meta Folder.</li>
 </ol>
 
 <b>How You Can Help:</b>
