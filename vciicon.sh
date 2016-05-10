@@ -50,17 +50,17 @@ fi
 
 if [ "$ARGUMENT" = "NES" ]
 then 
-	convert screenshot.png -resize 122x92\! -gravity center iconTex.png
-	convert iconTex.png -gravity center -crop 128x128 iconTex.png
-	composite -geometry +3+9 iconTex.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
-	rm -rf iconTex.png
-	convert screenshot.png -resize 400x300\! screenshot.png
-	convert screenshot.png \
+	convert screenshot.png -resize 122x92\! -gravity center iconTex-NES.png
+	convert iconTex-NES.png -gravity center -crop 128x128 iconTex-NES.png
+	composite -geometry +3+9 iconTex-NES.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
+	rm -rf iconTex-NES.png
+	convert screenshot.png -resize 400x300\! iconTex-NES.png
+	convert iconTex-NES.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite iconTex-NES.png
 fi
 
 if [ "$ARGUMENT" = "SNES" ]
