@@ -5,6 +5,7 @@ ARGUMENT="$1"
 echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
+
 mkdir -p "meta"
 
 if [ "$ARGUMENT" = "GBA" ]
@@ -29,6 +30,9 @@ then
 fi
 
 rm iconTex.png
+cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
+cp ./resources/bootMovie.h264 ./meta/bootMovie.h264
+cp ./resources/bootSound.btsnd ./meta/bootSound.btsnd
 
 echo "\n"
 echo "Done."
