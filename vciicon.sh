@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Call this script with at least 10 parameters, for example
-# ./scriptname 1
 MINPARAMS=2
 
 echo "VCiicon Beta by Larsenv."
