@@ -10,6 +10,12 @@ rm -r "meta"
 
 mkdir "meta"
 
+if [ $# 1 ]
+then
+    echo "z"
+    exit 1
+fi
+
 if [ "$ARGUMENT" = "GBA" ]
 then 
 	convert iconTex.png -resize 122x81\! -gravity center iconTex.png
