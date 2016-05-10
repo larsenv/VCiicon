@@ -14,7 +14,7 @@ then
 	composite -geometry +3+17 iconTex.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
 fi
 
-if [ "NES" ]
+if [ "$ARGUMENT" = "NES" ]
 then 
 	convert iconTex.png -resize 122x92\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
