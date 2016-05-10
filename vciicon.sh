@@ -65,17 +65,17 @@ fi
 
 if [ "$ARGUMENT" = "SNES" ]
 then 
-	convert screenshot.png -resize 122x92\! -gravity center iconTex.png
-	convert iconTex.png -gravity center -crop 128x128 iconTex.png
-	composite -geometry +3+9 iconTex.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
-	rm -rf iconTex.png
-	convert screenshot.png -resize 400x300\! screenshot.png
-	convert screenshot.png \
+	convert screenshot.png -resize 122x92\! -gravity center iconTex-SNES.png
+	convert iconTex-SNES.png -gravity center -crop 128x128 iconTex-SNES.png
+	composite -geometry +3+9 iconTex-SNES.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
+	rm -rf iconTex-SNES.png
+	convert screenshot.png -resize 400x300\! iconTex-SNES.png
+	convert iconTex-SNES.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite screenshot.png
+     \) -alpha off -compose CopyOpacity -composite iconTex-SNES.png
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
