@@ -6,7 +6,7 @@ echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
 
-mkdir -p "meta"
+rm -r "meta"
 
 if [ "$ARGUMENT" = "GBA" ]
 then 
