@@ -11,7 +11,7 @@ For now you need to install ImageMagick in order to use this. Also, please note 
 <b>Instructions:</b>
 
 <ol>
- <li>Find a good title screen image of your game.</li>
+ <li>Find a good title screen image of your game. Please make sure it's at least 400x300 (or 400x366 for GBA) for it to look good on the banner.</li>
  <li>Name it as iconTex.png (or other picture extension).</li>
  <li>Run the script (sh vciicon.sh <name of platform>) and it will do the rest. It will save it in the Meta Folder. Please remember if you're making another icon to move the folder after it's done before making another one or else it will be deleted.</li>
 </ol>
