@@ -19,7 +19,7 @@ For now you need to install ImageMagick in order to use this. Also, please note 
 <b>How You Can Help:</b>
 
 <p>
-If you have a meta folder for any Virtual Console game for platforms other than SNES, NES and GBA please send this to me.
+If you have a meta folder for a Virtual Console DS Game please send it to me.
 </p>
 
 <b>To-Do:</b>
