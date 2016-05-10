@@ -12,7 +12,9 @@ mkdir "meta"
 
 if (( $# != 1 ))
 then
-    echo "z"
+	echo "Usage:"
+	echo "\n"
+	echo "sh vciicon.sh <name of platform>"
     exit 1
 fi
 
