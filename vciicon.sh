@@ -23,7 +23,7 @@ then
 	convert screenshot.png -resize 122x81\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+17 iconTex.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
-	rm iconTex.png
+	rm -rf iconTex.png
 	convert screenshot.png -resize 400x266\! bootTvTex.png
 	convert bootTvTex.png \
      \( +clone  -alpha extract \
@@ -38,7 +38,7 @@ then
 	convert screenshot.png -resize 122x92\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
-	rm iconTex.png
+	rm -rf iconTex.png
 	convert screenshot.png -resize 400x300\! bootTvTex.png
 	convert bootTvTex.png \
      \( +clone  -alpha extract \
@@ -53,7 +53,7 @@ then
 	convert screenshot.png -resize 122x92\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
-	rm iconTex.png
+	rm -rf iconTex.png
 	convert screenshot.png -resize 400x300\! bootTvTex.png
 	convert bootTvTex.png \
      \( +clone  -alpha extract \
@@ -68,7 +68,7 @@ then
 	convert screenshot.png -resize 122x92\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
-	rm iconTex.png
+	rm -rf iconTex.png
 	convert screenshot.png -resize 400x300\! bootTvTex.png
 	convert bootTvTex.png \
      \( +clone  -alpha extract \
