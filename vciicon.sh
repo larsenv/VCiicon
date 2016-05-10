@@ -7,9 +7,8 @@ echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
 mkdir -p "meta"
 
-if [ "$ARGUMENT" ]
+if [ "$ARGUMENT" = "GBA" ]
 then 
-	echo $ARGUMENT
 	convert iconTex.png -resize 122x81\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+17 iconTex.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
