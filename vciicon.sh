@@ -24,6 +24,12 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+17 iconTex.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
 	rm iconTex.png
+	convert screenshot.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite screenshot.png
 fi
 
 if [ "$ARGUMENT" = "N64" ]
@@ -32,6 +38,12 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
 	rm iconTex.png
+	convert screenshot.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite screenshot.png
 fi
 
 if [ "$ARGUMENT" = "NES" ]
@@ -40,6 +52,12 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
 	rm iconTex.png
+	convert screenshot.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite screenshot.png
 fi
 
 if [ "$ARGUMENT" = "SNES" ]
@@ -48,6 +66,12 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
 	rm iconTex.png
+	convert screenshot.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite screenshot.png
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
