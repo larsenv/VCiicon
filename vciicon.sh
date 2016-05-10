@@ -26,6 +26,14 @@ then
 	rm iconTex.png
 fi
 
+if [ "$ARGUMENT" = "N64" ]
+then 
+	convert iconTex.png -resize 122x92\! -gravity center iconTex.png
+	convert iconTex.png -gravity center -crop 128x128 iconTex.png
+	composite -geometry +3+9 iconTex.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
+	rm iconTex.png
+fi
+
 if [ "$ARGUMENT" = "NES" ]
 then 
 	convert iconTex.png -resize 122x92\! -gravity center iconTex.png
