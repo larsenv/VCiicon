@@ -21,3 +21,7 @@ For now you need to install ImageMagick in order to use this. Also, please note 
 <p>
 If you have a meta folder for any Virtual Console game for platforms other than SNES, NES and GBA please send this to me.
 </p>
+
+<b>Download Here:</b>
+
+<b><a href="http://www.imagemagick.org/script/binary-releases.php">ImageMagick</a></b>
