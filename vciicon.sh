@@ -20,5 +20,6 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
 fi
+rm iconTex.png
 echo "\n"
 echo "Done."
