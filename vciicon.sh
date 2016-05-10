@@ -6,7 +6,7 @@ echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
 
-rm -r "meta"
+rm -rf "meta"
 
 mkdir "meta"
 
