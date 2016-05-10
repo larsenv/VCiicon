@@ -1,4 +1,4 @@
-<u><b>Description:</b></u>
+<b>Description:</b>
 
 VCiicon will be a way to generate a Virtual Console Icon (along with an XML and banner) for an injected game.
 
