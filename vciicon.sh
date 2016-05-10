@@ -39,7 +39,8 @@ then
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
 	composite -geometry +3+9 iconTex.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
 	rm iconTex.png
-	convert screenshot.png \
+	convert screenshot.png -resize 400x300\! bootTvTex.png
+	convert bootTvTex.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
