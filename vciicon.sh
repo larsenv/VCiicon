@@ -19,7 +19,7 @@ if [ "NES" ]
 then 
 	convert iconTex.png -resize 122x92\! -gravity center iconTex.png
 	convert iconTex.png -gravity center -crop 128x128 iconTex.png
-	composite -geometry +3+9 iconTex.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
+	composite -geometry +3+9 iconTex.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
 	rm iconTex.png
 fi
 echo "\n"
