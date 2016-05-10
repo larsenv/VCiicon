@@ -25,9 +25,10 @@ If you have a meta folder for any Virtual Console game for platforms other than 
 <b>To-Do:</b>
 
 <ul>
- <li>Make an XML with this.</li>
- <li>Make a banner with this.</li>
  <li>Add options to use OriginalHamster's templates.</li>
+ <li>Make a banner with this.</li>
+ <li>Make an XML with this.</li>
+ <li>Make this work with Windows.</li>
 </ul>
 
 <b>Download Here:</b>
