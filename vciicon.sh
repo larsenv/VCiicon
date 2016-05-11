@@ -18,6 +18,21 @@ then
     exit 1
 fi
 
+if [ "$ARGUMENT" = "DS" ]
+then 
+	convert screenshot.png -resize 68x92\! -gravity center iconTex-DS.png
+	convert iconTex.png -gravity center -crop 128x128 iconTex-DS.png
+	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
+	rm -rf iconTex-DS.png
+	convert screenshot.png -resize 400x266\! bootTvTex-DS.png
+	convert bootTvTex-DS.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
+fi
+
 if [ "$ARGUMENT" = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
