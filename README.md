@@ -16,12 +16,6 @@ For now you need to install ImageMagick in order to use this. Also, please note 
  <li>Run the script (sh vciicon.sh <name of platform>) and it will do the rest. It will save it in the Meta Folder. Please remember if you're making another icon to move the folder after it's done before making another one or else it will be deleted.</li>
 </ol>
 
-<b>How You Can Help:</b>
-
-<p>
-If you have a meta folder for a Virtual Console DS Game please send it to me.
-</p>
-
 <b>To-Do:</b>
 
 <ul>
