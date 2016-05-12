@@ -99,6 +99,8 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite iconTex-SNES.png
+     composite -geometry +249+131 bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootTvTex.tga
+	 composite -geometry +249+131 bootTvTex-SNES.png -resize 854x480 ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootDrcTex.tga
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
