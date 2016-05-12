@@ -65,6 +65,8 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite iconTex-N64.png
+     composite -geometry +249+131 bootTvTex-N64.png ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootTvTex.tga
+	 composite -geometry +249+131 bootTvTex-N64.png -resize 854x480 ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootDrcTex.tga
 fi
 
 if [ "$ARGUMENT" = "NES" ]
