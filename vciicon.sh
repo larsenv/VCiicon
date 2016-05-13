@@ -24,7 +24,9 @@ then
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
 	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
 	rm -rf iconTex-DS.png
+	convert -size 400x266 -fill black rectangle.png
 	convert screenshot.png -resize 225x300\! bootTvTex-DS.png
+	composite -gravity center bootTvTex-DS.png rectangle.png bootTvTex.png
 	convert bootTvTex-DS.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
