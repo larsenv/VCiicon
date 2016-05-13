@@ -95,15 +95,15 @@ then
 	convert iconTex-SNES.png -gravity center -crop 128x128 iconTex-SNES.png
 	composite -geometry +3+9 iconTex-SNES.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
 	rm -rf iconTex-SNES.png
-	convert screenshot.png -resize 400x300\! iconTex-SNES.png
-	convert iconTex-SNES.png \
+	convert screenshot.png -resize 400x300\! bootTvTex-SNES.png
+	convert bootTvTex-SNES.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite iconTex-SNES.png
-     composite -geometry +249+131 bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootTvTex.tga
-	 composite -geometry +249+131 bootTvTex-SNES.png -resize 854x480 ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootDrcTex.tga
+     \) -alpha off -compose CopyOpacity -composite bootTvTex-SNES.png
+     composite -geometry +131+249 bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootTvTex.tga
+	 composite -geometry +131+249 bootTvTex-SNES.png -resize 854x480 ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootDrcTex.tga
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
