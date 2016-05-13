@@ -21,7 +21,7 @@ fi
 if [ "$ARGUMENT" = "DS" ]
 then 
 	convert screenshot.png -resize 68x92\! -gravity center iconTex-DS.png
-	convert iconTex.png -gravity center -crop 128x128 iconTex-DS.png
+	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
 	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
 	rm -rf iconTex-DS.png
 	convert screenshot.png -resize 225x300\! bootTvTex-DS.png
@@ -33,12 +33,15 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      composite -geometry +249+131 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
 	 composite -geometry +249+131 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
+	 convert -background white -fill dodgerblue  -font ./resources/Rodin.otf \
+ 	          -strokewidth 2  -stroke blue   -undercolor lightblue \
+ 	          -size 165x70 -gravity center label:Anthony     z.png
 fi
 
 if [ "$ARGUMENT" = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
-	convert iconTex.png -gravity center -crop 128x128 iconTex-GBA.png
+	convert iconTex-GBA.png -gravity center -crop 128x128 iconTex-GBA.png
 	composite -geometry +3+17 iconTex-GBA.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
 	rm -rf iconTex-GBA.png
 	convert screenshot.png -resize 400x266\! bootTvTex-GBA.png
