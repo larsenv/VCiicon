@@ -61,15 +61,15 @@ then
 	convert iconTex-N64.png -gravity center -crop 128x128 iconTex-N64.png
 	composite -geometry +3+9 iconTex-N64.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
 	rm -rf iconTex-N64.png
-	convert screenshot.png -resize 400x300\! iconTex-N64.png
-	convert iconTex-N64.png \
+	convert screenshot.png -resize 400x300\! bootTvTex-N64.png
+	convert bootTvTex-N64.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
-     \) -alpha off -compose CopyOpacity -composite iconTex-N64.png
-     composite -geometry +249+131 bootTvTex-N64.png ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootTvTex.tga
-	 composite -geometry +249+131 bootTvTex-N64.png -resize 854x480 ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootDrcTex.tga
+     \) -alpha off -compose CopyOpacity -composite bootTvTex-N64.png
+     composite -geometry +131+249 bootTvTex-N64.png ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootTvTex.tga
+	 composite -geometry +131+249 bootTvTex-N64.png -resize 854x480 ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootDrcTex.tga
 fi
 
 if [ "$ARGUMENT" = "NES" ]
