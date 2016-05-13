@@ -51,8 +51,8 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-GBA.png
-     composite -geometry +260+132 bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootTvTex.tga
-	 composite -geometry +260+132 bootTvTex-GBA.png -resize 854x480 ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootDrcTex.tga
+     composite -geometry +132+260 bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootTvTex.tga
+	 composite -geometry +132+260 bootTvTex-GBA.png -resize 854x480 ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootDrcTex.tga
 fi
 
 if [ "$ARGUMENT" = "N64" ]
