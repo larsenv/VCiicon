@@ -31,8 +31,8 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
-     composite -geometry +132+260 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
-	 composite -geometry +132+260 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
+     composite -geometry +132+249 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
+	 composite -geometry +132+249 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
 fi
 
 if [ "$ARGUMENT" = "GBA" ]
