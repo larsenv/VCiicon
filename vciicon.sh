@@ -35,7 +35,7 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      composite -geometry +132+249 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
 	 composite -geometry +132+249 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
-	rm -rf bootTvTex-DS.png
+	 rm -rf bootTvTex-DS.png
 fi
 
 if [ "$ARGUMENT" = "GBA" ]
@@ -53,7 +53,7 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-GBA.png
      composite -geometry +132+260 bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootTvTex.tga
 	 composite -geometry +132+260 bootTvTex-GBA.png -resize 854x480 ./resources/bootTvTex-GBA.png ./resources/bootTvTex-GBA.png ./meta/bootDrcTex.tga
-	rm -rf bootTvTex-GBA.png
+	 rm -rf bootTvTex-GBA.png
 fi
 
 if [ "$ARGUMENT" = "N64" ]
@@ -71,7 +71,7 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-N64.png
      composite -geometry +131+249 bootTvTex-N64.png ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-N64.png -resize 854x480 ./resources/bootTvTex-N64.png ./resources/bootTvTex-N64.png ./meta/bootDrcTex.tga
-	rm -rf bootTvTex-N64.png
+	 rm -rf bootTvTex-N64.png
 fi
 
 if [ "$ARGUMENT" = "NES" ]
@@ -89,7 +89,7 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-NES.png -resize 854x480 ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootDrcTex.tga
-	rm -rf bootTvTex-NES.png
+	 rm -rf bootTvTex-NES.png
 fi
 
 if [ "$ARGUMENT" = "SNES" ]
@@ -107,7 +107,7 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SNES.png
      composite -geometry +131+249 bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-SNES.png -resize 854x480 ./resources/bootTvTex-SNES.png ./resources/bootTvTex-SNES.png ./meta/bootDrcTex.tga
-	rm -rf bootTvTex-SNES.png
+	 rm -rf bootTvTex-SNES.png
 fi
 
 cp ./resources/bootLogoTex.tga ./meta/bootLogoTex.tga
