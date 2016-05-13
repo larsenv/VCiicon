@@ -31,9 +31,9 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
-     composite -geometry +249+131 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
-	 composite -geometry +249+131 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
-	 convert -background white -fill dodgerblue  -font ./resources/Rodin.otf \
+     composite -geometry +131+249 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
+	 composite -geometry +131+249 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
+	 convert -fill dodgerblue  -font ./resources/Rodin.otf \
  	          -strokewidth 2  -stroke blue   -undercolor lightblue \
  	          -size 165x70 -gravity center label:Anthony     z.png
 fi
