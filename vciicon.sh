@@ -100,6 +100,10 @@ then
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     if [ "$ARGUMENT3" = "1992" ]
+     then
+     	composite -geometry +754+447 ./resources/Released-NES-1992.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     fi
      if [ "$ARGUMENT3" = "1993" ]
      then
      	composite -geometry +754+447 ./resources/Released-NES-1993.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
