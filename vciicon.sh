@@ -10,11 +10,11 @@ rm -rf "meta"
 
 mkdir "meta"
 
-if (( $# != 1 ))
+if (( $# != 2 ))
 then
 	echo "Usage:"
 	echo "\n"
-	echo "sh vciicon.sh <name of platform>"
+	echo "sh vciicon.sh <name of platform> <title>"
     exit 1
 fi
 
