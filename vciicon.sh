@@ -91,7 +91,7 @@ then
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
 		   -stroke white -strokewidth 2  -annotate +586+351 $ARGUMENT2 \
            -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+351 $ARGUMENT2 \
-           z.png
+           bootTvTex-Text.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-NES.png -resize 854x480 ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootDrcTex.tga
 	 rm -rf bootTvTex-NES.png
