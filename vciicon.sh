@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ARGUMENT1="$1"
+ARGUMENT2="$2"
 
 echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
@@ -87,10 +88,9 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
-     touch z.png
-     convert -size 1280x720 xc:lightblue -font ./resources/Rodin-B.otf -pointsize 72 \
-		   -stroke white -strokewidth 2  -annotate +586+351 "$ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+351 "$ARGUMENT2" \
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+		   -stroke white -strokewidth 2  -annotate +586+351 $ARGUMENT2 \
+           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+351 $ARGUMENT2 \
            z.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-NES.png -resize 854x480 ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootDrcTex.tga
