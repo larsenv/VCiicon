@@ -88,9 +88,10 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
+     touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 2  -annotate +586+351 $ARGUMENT2 \
-           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+351 $ARGUMENT2 \
+		   -stroke white -strokewidth 1  -annotate +586+375 $ARGUMENT2 \
+           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+375 $ARGUMENT2 \
            bootTvTex-Text.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
      composite bootTvTex-Text.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
