@@ -100,6 +100,9 @@ then
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
+	 rm -rf bootTvTex-Text3.png
+	 rm -rf bootTvTex-Text2.png
+	 rm -rf bootTvTex-Text1.png
 	 rm -rf bootTvTex-NES.png
 fi
 
