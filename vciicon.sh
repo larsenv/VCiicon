@@ -90,12 +90,15 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 1  -annotate +586+375 $ARGUMENT2 \
-           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+375 $ARGUMENT2 \
-           bootTvTex-Text.png
+		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+           bootTvTex-Text1.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           bootTvTex-Text2.png
+	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
-     composite bootTvTex-Text.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
-	 composite -geometry +131+249 bootTvTex-NES.png -resize 854x480 ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootDrcTex.tga
+     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 rm -rf bootTvTex-NES.png
 fi
 
