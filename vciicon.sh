@@ -2,6 +2,7 @@
 
 ARGUMENT1="$1"
 ARGUMENT2="$2"
+ARGUMENT3="$3"
 
 echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
@@ -11,11 +12,11 @@ rm -rf "meta"
 
 mkdir "meta"
 
-if (( $# != 2 ))
+if (( $# != 3 ))
 then
 	echo "Usage:"
 	echo "\n"
-	echo "sh vciicon.sh <name of platform> <title>"
+	echo "sh vciicon.sh <name of platform> <title> <release_year>"
     exit 1
 fi
 
