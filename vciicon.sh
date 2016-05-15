@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ARGUMENT="$1"
+ARGUMENT1="$1"
 
 echo "VCiicon Beta by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
@@ -18,7 +18,7 @@ then
     exit 1
 fi
 
-if [ "$ARGUMENT" = "DS" ]
+if [ "$ARGUMENT1" = "DS" ]
 then 
 	convert screenshot.png -resize 68x92\! -gravity center iconTex-DS.png
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
@@ -38,7 +38,7 @@ then
 	 rm -rf bootTvTex-DS.png
 fi
 
-if [ "$ARGUMENT" = "GBA" ]
+if [ "$ARGUMENT"1 = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
 	convert iconTex-GBA.png -gravity center -crop 128x128 iconTex-GBA.png
@@ -56,7 +56,7 @@ then
 	 rm -rf bootTvTex-GBA.png
 fi
 
-if [ "$ARGUMENT" = "N64" ]
+if [ "$ARGUMENT1" = "N64" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-N64.png
 	convert iconTex-N64.png -gravity center -crop 128x128 iconTex-N64.png
@@ -74,7 +74,7 @@ then
 	 rm -rf bootTvTex-N64.png
 fi
 
-if [ "$ARGUMENT" = "NES" ]
+if [ "$ARGUMENT1" = "NES" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-NES.png
 	convert iconTex-NES.png -gravity center -crop 128x128 iconTex-NES.png
@@ -87,12 +87,17 @@ then
         \( +clone -flip \) -compose Multiply -composite \
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
+     touch z.png
+     convert -size 1280x720 xc:lightblue -font ./resources/Rodin-B.otf -pointsize 72 \
+		   -stroke white -strokewidth 2  -annotate +586+351 'Anthony' \
+           -fill gradient:#0a0a0a:#2e2e2e  -annotate +586+351 'Anthony' \
+           z.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
 	 composite -geometry +131+249 bootTvTex-NES.png -resize 854x480 ./resources/bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootDrcTex.tga
 	 rm -rf bootTvTex-NES.png
 fi
 
-if [ "$ARGUMENT" = "SNES" ]
+if [ "$ARGUMENT1" = "SNES" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-SNES.png
 	convert iconTex-SNES.png -gravity center -crop 128x128 iconTex-SNES.png
