@@ -23,7 +23,6 @@ For now you need to install ImageMagick in order to use this. Also, please note 
  <li>Make a banner with this.</li>
  <li>Make an XML with this.</li>
  <li>Make this work with Windows.</li>
- <li>Make this work with the other Virtual Console Platforms.</li>
 </ul>
 
 <b>Download Here:</b>
