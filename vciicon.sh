@@ -105,10 +105,9 @@ then
            -fill black  -draw "text 754,447 $ARGUMENT2" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
+	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
-     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
-     composite bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
-     composite bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
      rm -rf bootTvTex-Text5.png
      rm -rf bootTvTex-Text4.png
