@@ -109,6 +109,7 @@ then
      composite bootTvTex-Text3.png bootTvTex-Text4.png bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
      rm -rf bootTvTex-Text5.png
+     rm -rf bootTvTex-Text4.png
 	 rm -rf bootTvTex-Text3.png
 	 rm -rf bootTvTex-Text2.png
 	 rm -rf bootTvTex-Text1.png
