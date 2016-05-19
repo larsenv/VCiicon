@@ -36,6 +36,28 @@ then
      composite -geometry +132+249 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
 	 composite -geometry +132+249 bootTvTex-DS.png -resize 854x480 ./resources/bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootDrcTex.tga
 	 rm -rf bootTvTex-*.png
+     touch bootTvTex-Text.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+           bootTvTex-Text1.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           bootTvTex-Text2.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 754,480 $ARGUMENT3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 754,480 $ARGUMENT3" \
+           bootTvTex-Text4.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+           -fill black  -draw "text 754,480 $ARGUMENT3" \
+           bootTvTex-Text5.png
+	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
+	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
+     composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
+     rm -rf bootTvTex-*.png
 fi
 
 if [ "$ARGUMENT"1 = "GBA" ]
