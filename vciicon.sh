@@ -22,7 +22,7 @@ fi
 
 if [ "$ARGUMENT1" = "DS" ]
 then 
-	convert screenshot.png -resize 68x92\! -gravity center iconTex-DS.png
+	convert screenshot.png -resize 122x92\! -gravity center iconTex-DS.png
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
 	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
 	rm -rf iconTex-DS.png
