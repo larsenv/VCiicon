@@ -4,7 +4,7 @@ ARGUMENT1="$1"
 ARGUMENT2="$2"
 ARGUMENT3="$3"
 
-echo "VCiicon Beta by Larsenv."
+echo "VCiicon by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
 
