@@ -1,11 +1,5 @@
 #!/bin/bash
 
-MINPARAMS=2
-
-ARGUMENT1="$1"
-ARGUMENT2="$2"
-ARGUMENT3="$3"
-
 echo "VCiicon by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
@@ -14,13 +8,13 @@ rm -rf "meta"
 
 mkdir "meta"
 
-if (( $# != 6 ))
+if (( $# != 3 ))
 then
 	echo "Usage:"
 	echo "\n"
-	echo "sh vciicon.sh -p <name of platform> -t <title> -y <release_year>"
+	echo "sh vciicon.sh <name of platform> <title> <release_year>"
 	echo "\n"
-	echo "Name of platform can be DS, GBA, N64, NES, PCEngine, or SNES."
+	echo "Name of platform can be DS, GBA, N64, NES, PCEngine, or SNES. Required"
 	echo "Title is the title of your game. Required."
 	echo "Release Year is the year the game was released. Required."
     exit 1
@@ -41,18 +35,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -78,18 +72,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-GBA.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -115,18 +109,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-N64.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -152,18 +146,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -189,18 +183,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-PCEngine.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -226,18 +220,18 @@ then
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SNES.png
      touch bootTvTex-Text.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
            bootTvTex-Text1.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $ARGUMENT2" \
+           -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
