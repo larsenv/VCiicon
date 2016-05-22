@@ -16,7 +16,7 @@ if (( $# != 3 ))
 then
 	echo "Usage:"
 	echo "\n"
-	echo "sh vciicon.sh <name of platform> -t <title> -y <release_year>"
+	echo "sh vciicon.sh -p <name of platform> -t <title> -y <release_year>"
 	echo "\n"
 	echo "Name of platform can be DS, GBA, N64, NES, PCEngine, or SNES."
 	echo "Title is the title of your game. Required."
