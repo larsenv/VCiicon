@@ -17,6 +17,10 @@ then
 	echo "Usage:"
 	echo "\n"
 	echo "sh vciicon.sh <name of platform> <title> <release_year>"
+	echo "\n"
+	echo "Name of platform can be DS, GBA, N64, NES, PCEngine, or SNES."
+	echo "Title is the title of your game."
+	echo "Release Year is the year the game was released."
     exit 1
 fi
 
