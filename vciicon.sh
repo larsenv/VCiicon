@@ -57,7 +57,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT"1 = "GBA" ]
+if [ "$ARGUMENT1" = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
 	convert iconTex-GBA.png -gravity center -crop 128x128 iconTex-GBA.png
