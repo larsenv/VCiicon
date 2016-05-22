@@ -4,9 +4,6 @@ ARGUMENT1="$1"
 ARGUMENT2="$2"
 ARGUMENT3="$3"
 
-RELEASED="Released"
-SEMICOLON=": "
-
 echo "VCiicon by Larsenv."
 echo "Requires ImageMagick for now, and icon to iconTex.png."
 echo "\n"
@@ -37,7 +34,6 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      touch bootTvTex-Text.png
-     semicolon=": "
      convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
 		   -stroke white -strokewidth 5  -draw "text 586,375 $ARGUMENT2" \
            -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $ARGUMENT2" \
@@ -46,11 +42,11 @@ then
            -fill black  -draw "text 586,375 $ARGUMENT2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $Released" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $Released" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $ARGUMENT3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $ARGUMENT3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 $Released" \
+           -fill black  -draw "text 586,480 $ARGUMENT3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -83,11 +79,11 @@ then
            -fill black  -draw "text 586,375 $ARGUMENT2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 754,480 $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 754,480 $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 754,480 $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -120,11 +116,11 @@ then
            -fill black  -draw "text 586,375 $ARGUMENT2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 754,480 $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 754,480 $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 754,480 $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -157,11 +153,11 @@ then
            -fill black  -draw "text 586,375 $ARGUMENT2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 754,480 $ARGUMENT3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 754,480 $ARGUMENT3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $ARGUMENT3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 754,480 $ARGUMENT3" \
+           -fill black  -draw "text 586,480 'Released: ' $ARGUMENT3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
