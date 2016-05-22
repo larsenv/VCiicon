@@ -24,7 +24,7 @@ then
     exit 1
 fi
 
-if [ "$ARGUMENT1" = "DS" ]
+if [ -p "$1" = "DS" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-DS.png
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
@@ -61,7 +61,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT1" = "GBA" ]
+if [ -p "$1" = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
 	convert iconTex-GBA.png -gravity center -crop 128x128 iconTex-GBA.png
@@ -98,7 +98,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT1" = "N64" ]
+if [ -p "$1" = "N64" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-N64.png
 	convert iconTex-N64.png -gravity center -crop 128x128 iconTex-N64.png
@@ -135,7 +135,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT1" = "NES" ]
+if [ -p "$1" = "NES" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-NES.png
 	convert iconTex-NES.png -gravity center -crop 128x128 iconTex-NES.png
@@ -172,7 +172,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT1" = "PCEngine" ]
+if [ -p "$1" = "PCEngine" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-DS.png
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
@@ -209,7 +209,7 @@ then
      rm -rf bootTvTex-*.png
 fi
 
-if [ "$ARGUMENT1" = "SNES" ]
+if [ -p "$1" = "SNES" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-SNES.png
 	convert iconTex-SNES.png -gravity center -crop 128x128 iconTex-SNES.png
