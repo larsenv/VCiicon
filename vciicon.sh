@@ -20,7 +20,7 @@ then
 	echo "\n"
 	echo "Name of platform can be DS, GBA, N64, NES, PCEngine, or SNES."
 	echo "Title is the title of your game. Required."
-	echo "Release Year is the year the game was released."
+	echo "Release Year is the year the game was released. Required."
     exit 1
 fi
 
