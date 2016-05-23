@@ -8,7 +8,7 @@ rm -rf "meta"
 
 mkdir "meta"
 
-if (( $# != 3 ))
+if (( $# < 3 ))
 then
 	echo "Usage:"
 	echo "\n"
@@ -19,6 +19,26 @@ then
 	echo "Release Year is the year the game was released. Required."
 	echo "Release Type can be Europe (Released in Europe), USA (Released in the USA), or Worldwide (Released). This is for cases for games like Super Mario Bros, where it was released in USA and Japan in 1985. Since it was released in Europe in 1987, you can use Europe as this argument to show the specific text."
     exit 1
+fi
+
+if [ "$4" = "Europe" ]
+then
+	RELEASED='Released in Europe: '
+fi
+
+if [ "$4" = "USA" ]
+then
+	RELEASED='Released in the USA: '
+fi
+
+if [ "$4" = "Worldwide" ]
+then
+	RELEASED='Released: '
+fi
+
+if [ -z "$4" ]
+then
+	RELEASED='Released: '
 fi
 
 if [ "$1" = "DS" ]
@@ -43,11 +63,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -80,11 +100,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -117,11 +137,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -154,11 +174,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -191,11 +211,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
@@ -228,11 +248,11 @@ then
            -fill black  -draw "text 586,375 $2" \
            bootTvTex-Text2.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 'Released: ' $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 'Released: ' $3" \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           -fill black  -draw "text 586,480 'Released: ' $3" \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
