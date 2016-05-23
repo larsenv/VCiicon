@@ -137,6 +137,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-Famicom.png ./resources/bootTvTex-Famicom.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -184,6 +188,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-GBA.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -231,6 +239,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-MSX.png ./resources/bootTvTex-MSX.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -278,6 +290,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-N64.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -325,6 +341,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-NES.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -372,6 +392,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-PCEngine.png ./resources/bootTvTex-PCEngine.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -419,6 +443,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-NES.png ./resources/bootTvTex-SNES.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -466,6 +494,10 @@ then
      fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-SuperFamicom.png ./resources/bootTvTex-SuperFamicom.png ./meta/bootTvTex.tga
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
