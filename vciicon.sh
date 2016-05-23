@@ -22,6 +22,11 @@ then
     exit 1
 fi
 
+if [ -z "$4" ]
+then
+	RELEASED='Released: '
+fi
+
 if [ "$4" = "Europe" ]
 then
 	RELEASED='Released in Europe: '
@@ -33,11 +38,6 @@ then
 fi
 
 if [ "$4" = "Worldwide" ]
-then
-	RELEASED='Released: '
-fi
-
-if [ -z "$4" ]
 then
 	RELEASED='Released: '
 fi
