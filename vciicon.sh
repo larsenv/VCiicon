@@ -18,7 +18,7 @@ then
 	echo "Title is the title of your game. Required."
 	echo "Release Year is the year the game was released. Required."
 	echo "Release Type can be Europe (Released in Europe), USA (Released in the USA), or Worldwide (Released). This is for cases for games like Super Mario Bros, where it was released in USA and Japan in 1985. Since it was released in Europe in 1987, you can use Europe as this argument to show the specific text."
-    echo "Players is the number of players the game has support for."
+    echo "Players is the number of players the game has support for. If the game has support for 4 players, you can either put 4 or 1-4 and either way it will say 1-4."
     exit 1
 fi
 
