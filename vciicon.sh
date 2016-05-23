@@ -78,6 +78,43 @@ then
      rm -rf bootTvTex-*.png
 fi
 
+if [ "$1" = "Famicom" ]
+then
+	convert screenshot.png -resize 122x92\! -gravity center iconTex-Famicom.png
+	convert iconTex-Famicom.png -gravity center -crop 128x128 iconTex-Famicom.png
+	composite -geometry +3+17 iconTex-Famicom.png ./resources/iconTex-Famicom.png ./resources/iconTex-Famicom.png ./meta/iconTex.tga
+	rm -rf iconTex-Famicom.png
+	convert screenshot.png -resize 400x266\! bootTvTex-Famicom.png
+	convert bootTvTex-Famicom.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite bootTvTex-Famicom.png
+     touch bootTvTex-Text.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
+           bootTvTex-Text1.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+           -fill black  -draw "text 586,375 $2" \
+           bootTvTex-Text2.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
+           bootTvTex-Text4.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
+           bootTvTex-Text5.png
+	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
+	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +131+249 bootTvTex-Famicom.png ./resources/bootTvTex-Famicom.png ./meta/bootTvTex.tga
+     composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
+     rm -rf bootTvTex-*.png
+fi
+
 if [ "$1" = "GBA" ]
 then 
 	convert screenshot.png -resize 122x81\! -gravity center iconTex-GBA.png
