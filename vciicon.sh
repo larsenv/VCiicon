@@ -152,6 +152,43 @@ then
      rm -rf bootTvTex-*.png
 fi
 
+if [ "$1" = "MSX" ]
+then
+	convert screenshot.png -resize 122x92\! -gravity center iconTex-MSX.png
+	convert iconTex-MSX.png -gravity center -crop 128x128 iconTex-MSX.png
+	composite -geometry +3+17 iconTex-MSX.png ./resources/iconTex-MSX.png ./resources/iconTex-MSX.png ./meta/iconTex.tga
+	rm -rf iconTex-MSX.png
+	convert screenshot.png -resize 400x266\! bootTvTex-MSX.png
+	convert bootTvTex-MSX.png \
+     \( +clone  -alpha extract \
+        -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+     \) -alpha off -compose CopyOpacity -composite bootTvTex-MSX.png
+     touch bootTvTex-Text.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
+           bootTvTex-Text1.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
+           -fill black  -draw "text 586,375 $2" \
+           bootTvTex-Text2.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
+           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
+           bootTvTex-Text4.png
+     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+           -fill black  -draw "text 586,480 $RELEASED $3" \
+           bootTvTex-Text5.png
+	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
+	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +131+249 bootTvTex-MSX.png ./resources/bootTvTex-MSX.png ./meta/bootTvTex.tga
+     composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
+     rm -rf bootTvTex-*.png
+fi
+
 if [ "$1" = "N64" ]
 then 
 	convert screenshot.png -resize 122x92\! -gravity center iconTex-N64.png
