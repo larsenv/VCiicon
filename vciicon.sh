@@ -12,12 +12,13 @@ if (( $# < 3 ))
 then
 	echo "Usage:"
 	echo "\n"
-	echo "sh vciicon.sh <name of platform> <title> <release_year> <release_type>"
+	echo "sh vciicon.sh <name of platform> <title> <release_year> <release_type> <players>"
 	echo "\n"
 	echo "Name of platform can be DS, Famicom, GBA, MSX, N64, NES, PCEngine, SNES, or SuperFamicom. Required."
 	echo "Title is the title of your game. Required."
 	echo "Release Year is the year the game was released. Required."
 	echo "Release Type can be Europe (Released in Europe), USA (Released in the USA), or Worldwide (Released). This is for cases for games like Super Mario Bros, where it was released in USA and Japan in 1985. Since it was released in Europe in 1987, you can use Europe as this argument to show the specific text."
+    echo "Players is the number of players the game has support for."
     exit 1
 fi
 
