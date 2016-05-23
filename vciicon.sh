@@ -70,9 +70,27 @@ then
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
+     if [ -n "$5" ]
+     then
+     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
+           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
+           	bootTvTex-Text7.png
+     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
+           	-fill black  -draw "text 586,480 5" \
+           	bootTvTex-Text8.png
+     fi
 	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+	 if [ -n "$5" ]
+	 then
+	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
+	 fi
      composite -geometry +131+249 bootTvTex-DS.png ./resources/bootTvTex-DS.png ./meta/bootTvTex.tga
+     if [ -n "$5" ]
+     then
+     	composite bootTvTex-Text9.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     fi
      composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
