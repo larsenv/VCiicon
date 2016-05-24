@@ -102,6 +102,21 @@ then
      composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
      rm -rf bootTvTex-*.png
+     if [ -s "background_tv.png" ]
+     then
+     	rm -rf "content"
+     	mkdir -p content
+     	mkdir -p content/0010/
+     	mkdir -p content/0010/assets/
+     	mkdir -p content/0010/assets/textures/
+     	convert -resize 1280x720\! background_tv.png ./content/0010/assets/textures/tvback.png
+     	if [ -s "background_gamepad.png" ]
+     	then
+     		convert -resize 854x480\! background_gamepad.png ./content/0010/assets/textures/drcback.png
+     	fi
+     	rm -rf "background_tv.png"
+     	rm -rf "background_gamepad.png"
+     fi
 fi
 
 if [ "$1" = "Famicom" ]
