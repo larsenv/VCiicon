@@ -22,7 +22,7 @@ then
 	echo "Release Type can be Europe (Released in Europe), USA (Released in the USA), or Worldwide (Released). This is for cases for games like Super Mario Bros, where it was released in USA and Japan in 1985. Since it was released in Europe in 1987, you can use Europe as this argument to show the specific text."
     echo "Players is the number of players the game has support for. If the game has support for 4 players, you can either put 1-4 meaning 1 to 4 players can play."
     echo "\n"
-    echo "If making a DS Inject, you can make custom backgrounds."
+    echo "If making a DS Inject, you can make custom backgrounds too."
     echo "\n"
     echo "For the TV, save the background as background_tv.png."
     echo "For the GamePad, save the background as background_gamepad.png."
