@@ -56,7 +56,7 @@ then
 	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
 	rm -rf iconTex-DS.png
 	convert screenshot.png -resize 400x266\! bootTvTex-DS.png
-	composite ./resources/gloss.png  bootTvTex-DS.png
+	composite ./resources/gloss.png bootTvTex-DS.png bootTvTex-DS.png
 	convert bootTvTex-DS.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -127,7 +127,7 @@ then
 	composite -geometry +3+17 iconTex-Famicom.png ./resources/iconTex-Famicom.png ./resources/iconTex-Famicom.png ./meta/iconTex.tga
 	rm -rf iconTex-Famicom.png
 	convert screenshot.png -resize 400x266\! bootTvTex-Famicom.png
-	composite ./resources/gloss.png  bootTvTex-Famicom.png
+	composite ./resources/gloss.png bootTvTex-Famicom.png bootTvTex-Famicom.png
 	convert bootTvTex-Famicom.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -183,7 +183,7 @@ then
 	composite -geometry +3+17 iconTex-GBA.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
 	rm -rf iconTex-GBA.png
 	convert screenshot.png -resize 400x266\! bootTvTex-GBA.png
-	composite ./resources/gloss.png  bootTvTex-GBA.png
+	composite ./resources/gloss.png bootTvTex-GBA.png bootTvTex-GBA.png
 	convert bootTvTex-GBA.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -239,7 +239,7 @@ then
 	composite -geometry +3+17 iconTex-MSX.png ./resources/iconTex-MSX.png ./resources/iconTex-MSX.png ./meta/iconTex.tga
 	rm -rf iconTex-MSX.png
 	convert screenshot.png -resize 400x266\! bootTvTex-MSX.png
-	composite ./resources/gloss.png  bootTvTex-MSX.png
+	composite ./resources/gloss.png bootTvTex-MSX.png bootTvTex-MSX.png
 	convert bootTvTex-MSX.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -295,7 +295,7 @@ then
 	composite -geometry +3+9 iconTex-N64.png ./resources/iconTex-N64.png ./resources/iconTex-N64.png ./meta/iconTex.tga
 	rm -rf iconTex-N64.png
 	convert screenshot.png -resize 400x300\! bootTvTex-N64.png
-	composite ./resources/gloss.png  bootTvTex-N64.png
+	composite ./resources/gloss.png bootTvTex-N64.png bootTvTex-N64.png
 	convert bootTvTex-N64.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -351,7 +351,7 @@ then
 	composite -geometry +3+9 iconTex-NES.png ./resources/iconTex-NES.png ./resources/iconTex-NES.png ./meta/iconTex.tga
 	rm -rf iconTex-NES.png
 	convert screenshot.png -resize 400x300\! bootTvTex-NES.png
-	composite ./resources/gloss.png  bootTvTex-NES.png
+	composite ./resources/gloss.png bootTvTex-NES.png bootTvTex-NES.png
 	convert bootTvTex-NES.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -407,7 +407,7 @@ then
 	composite -geometry +3+17 iconTex-PCEngine.png ./resources/iconTex-PCEngine.png ./resources/iconTex-PCEngine.png ./meta/iconTex.tga
 	rm -rf iconTex-PCEngine.png
 	convert screenshot.png -resize 400x266\! bootTvTex-PCEngine.png
-	composite ./resources/gloss.png  bootTvTex-PCEngine.png
+	composite ./resources/gloss.png bootTvTex-PCEngine.png bootTvTex-PCEngine.png
 	convert bootTvTex-PCEngine.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -463,7 +463,7 @@ then
 	composite -geometry +3+9 iconTex-SNES.png ./resources/iconTex-SNES.png ./resources/iconTex-SNES.png ./meta/iconTex.tga
 	rm -rf iconTex-SNES.png
 	convert screenshot.png -resize 400x300\! bootTvTex-SNES.png
-	composite ./resources/gloss.png  bootTvTex-SNES.png
+	composite ./resources/gloss.png bootTvTex-SNES.png bootTvTex-SNES.png
 	convert bootTvTex-SNES.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
@@ -519,7 +519,7 @@ then
 	composite -geometry +3+17 iconTex-SuperFamicom.png ./resources/iconTex-SuperFamicom.png ./resources/iconTex-SuperFamicom.png ./meta/iconTex.tga
 	rm -rf iconTex-SuperFamicom.png
 	convert screenshot.png -resize 400x266\! bootTvTex-SuperFamicom.png
-	composite ./resources/gloss.png  bootTvTex-SuperFamicom.png
+	composite ./resources/gloss.png bootTvTex-SuperFamicom.png bootTvTex-SuperFamicom.png
 	convert bootTvTex-SuperFamicom.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
