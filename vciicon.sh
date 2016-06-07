@@ -99,7 +99,8 @@ then
      then
      	composite bootTvTex-Text9.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      fi
-     composite  -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
      rm -rf bootTvTex-*.png
      if [ -s "background_tv.png" ]
@@ -160,7 +161,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -217,7 +219,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -274,7 +277,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -331,7 +335,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -388,7 +393,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -445,7 +451,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -502,7 +509,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
@@ -559,7 +567,8 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
+     composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
 	 if [ -n "$5" ]
 	 then
 	 	composite bootTvTex-Text8.png bootTvTex-Text7.png bootTvTex-Text9.png
