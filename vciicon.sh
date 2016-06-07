@@ -145,7 +145,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -195,7 +194,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -245,7 +243,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -295,7 +292,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -345,7 +341,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -395,7 +390,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -445,7 +439,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -495,7 +488,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
