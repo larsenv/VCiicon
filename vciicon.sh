@@ -68,7 +68,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -131,7 +134,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -180,7 +186,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -229,7 +238,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -278,7 +290,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -327,7 +342,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -376,7 +394,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -425,7 +446,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -474,7 +498,10 @@ then
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
-			-reverse -compose multiply -composite bootTvTex-Text4.png
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
