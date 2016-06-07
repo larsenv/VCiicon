@@ -127,17 +127,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-Famicom.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -183,17 +177,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-GBA.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -239,17 +227,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-MSX.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -295,17 +277,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-N64.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -351,17 +327,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 5886,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -407,17 +377,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-PCEngine.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -463,17 +427,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SNES.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -519,17 +477,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SuperFamicom.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
