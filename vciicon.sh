@@ -64,17 +64,11 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      touch bootTvTex-Text.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,375 $2" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,375 $2" \
-           bootTvTex-Text1.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-B.otf -pointsize 36 \
-           -fill black  -draw "text 586,375 $2" \
-           bootTvTex-Text2.png
-     convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   -stroke white -strokewidth 5  -draw "text 586,480 $RELEASED $3" \
-           -fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $RELEASED $3" \
-           bootTvTex-Text4.png
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$2" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			-reverse -compose multiply -composite bootTvTex-Text4.png
      convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
            -fill black  -draw "text 586,480 $RELEASED $3" \
            bootTvTex-Text5.png
@@ -88,7 +82,6 @@ then
            	-fill black  -draw "text 586,480 5" \
            	bootTvTex-Text8.png
      fi
-	 composite bootTvTex-Text2.png bootTvTex-Text1.png bootTvTex-Text3.png
 	 composite bootTvTex-Text5.png bootTvTex-Text4.png bootTvTex-Text6.png
 	 if [ -n "$5" ]
 	 then
@@ -99,8 +92,7 @@ then
      then
      	composite bootTvTex-Text9.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      fi
-     composite bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
-     composite bootTvTex-Text3.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
+     composite  -geometry +586+375 bootTvTex-Text6.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      convert -resize 854x480\! ./meta/bootTvTex.tga ./meta/bootDrcTex.tga
      rm -rf bootTvTex-*.png
      if [ -s "background_tv.png" ]
