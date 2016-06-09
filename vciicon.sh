@@ -186,7 +186,7 @@ then
 	composite -geometry +3+17 iconTex-GBA.png ./resources/iconTex-GBA.png ./resources/iconTex-GBA.png ./meta/iconTex.tga
 	rm -rf iconTex-GBA.png
 	convert screenshot.png -resize 400x266\! bootTvTex-GBA.png
-	composite ./resources/gloss.png bootTvTex-GBA.png bootTvTex-GBA.png
+	composite -resize 400x266\! ./resources/gloss.png bootTvTex-GBA.png bootTvTex-GBA.png
 	convert bootTvTex-GBA.png \
      \( +clone  -alpha extract \
         -draw 'fill black polygon 0,0 0,10 10,0 fill white circle 10,10 10,0' \
