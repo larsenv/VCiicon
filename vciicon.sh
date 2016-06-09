@@ -64,7 +64,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-DS.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -72,7 +72,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -134,7 +134,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-Famicom.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -142,7 +142,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -192,7 +192,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-GBA.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -200,7 +200,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -250,7 +250,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-MSX.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -258,7 +258,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -308,7 +308,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-N64.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -316,7 +316,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -366,7 +366,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-NES.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -374,7 +374,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -424,7 +424,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-PCEngine.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -432,7 +432,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -482,7 +482,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SNES.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -490,7 +490,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -540,7 +540,7 @@ then
         \( +clone -flop \) -compose Multiply -composite \
      \) -alpha off -compose CopyOpacity -composite bootTvTex-SuperFamicom.png
      touch bootTvTex-Text.png
-     convert -background black -fill white -pointsize 96 -font ./resources/Rodin-B.otf \
+     convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
 			label:"$2" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
@@ -548,7 +548,7 @@ then
 			\( -clone 0 -morphology dilate octagon:4 \) \
 			-delete 0-2 -compose over \
 			-alpha off -compose copy_opacity -composite bootTvTex-Text4.png
-	 convert -background black -fill white -pointsize 96 -font ./resources/Rodin-DB.otf \
+	 convert -background black -fill white -pointsize 36 -font ./resources/Rodin-DB.otf \
 	 	 	label:"$RELEASED $3" -bordercolor black -border 10 -alpha off \
 			\( -clone 0 -morphology erode octagon:1 -negate \) \
 			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
