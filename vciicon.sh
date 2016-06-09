@@ -87,7 +87,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
 	 if [ -n "$5" ]
@@ -157,7 +157,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -215,7 +215,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -273,7 +273,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -331,7 +331,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -389,7 +389,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -447,7 +447,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -505,7 +505,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -563,7 +563,7 @@ then
            	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
            	bootTvTex-Text7.png
      	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 5" \
+           	-fill black  -draw "text 586,480 $5" \
            	bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
