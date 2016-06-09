@@ -55,7 +55,7 @@ then
 	convert iconTex-DS.png -gravity center -crop 128x128 iconTex-DS.png
 	composite -geometry +3+17 iconTex-DS.png ./resources/iconTex-DS.png ./resources/iconTex-DS.png ./meta/iconTex.tga
 	rm -rf iconTex-DS.png
-	convert screenshot.png -resize 400x266\! bootTvTex-DS.png
+	convert screenshot.png -resize 400x300\! bootTvTex-DS.png
 	composite ./resources/gloss.png bootTvTex-DS.png bootTvTex-DS.png
 	convert bootTvTex-DS.png \
      \( +clone  -alpha extract \
@@ -126,7 +126,7 @@ then
 	convert iconTex-Famicom.png -gravity center -crop 128x128 iconTex-Famicom.png
 	composite -geometry +3+17 iconTex-Famicom.png ./resources/iconTex-Famicom.png ./resources/iconTex-Famicom.png ./meta/iconTex.tga
 	rm -rf iconTex-Famicom.png
-	convert screenshot.png -resize 400x266\! bootTvTex-Famicom.png
+	convert screenshot.png -resize 400x300\! bootTvTex-Famicom.png
 	composite ./resources/gloss.png bootTvTex-Famicom.png bootTvTex-Famicom.png
 	convert bootTvTex-Famicom.png \
      \( +clone  -alpha extract \
