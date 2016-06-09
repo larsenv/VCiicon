@@ -82,13 +82,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
 	 if [ -n "$5" ]
 	 then
@@ -152,13 +153,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -210,13 +212,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -268,13 +271,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -326,13 +330,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -384,13 +389,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -442,13 +448,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -500,13 +507,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
@@ -558,13 +566,14 @@ then
 			-alpha off -compose copy_opacity -composite bootTvTex-Text5.png
      if [ -n "$5" ]
      then
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-		   	-stroke white -strokewidth 5  -draw "text 586,480 $5" \
-           	-fill gradient:#0a0a0a:#2e2e2e  -draw "text 586,480 $5" \
-           	bootTvTex-Text7.png
-     	convert -size 1280x720 xc:none -font ./resources/Rodin-DB.otf -pointsize 36 \
-           	-fill black  -draw "text 586,480 $5" \
-           	bootTvTex-Text8.png
+     	convert -background black -fill white -pointsize 36 -font ./resources/Rodin-B.otf \
+			label:"$5" -bordercolor black -border 10 -alpha off \
+			\( -clone 0 -morphology erode octagon:1 -negate \) \
+			\( -clone 0 -morphology dilate octagon:2 -shade 135x60 \) \
+			\( -clone 0-2 -reverse -compose multiply -composite \) \
+			\( -clone 0 -morphology dilate octagon:4 \) \
+			-delete 0-2 -compose over \
+			-alpha off -compose copy_opacity -composite bootTvTex-Text8.png
      fi
      composite -geometry +586+375 bootTvTex-Text4.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
      composite -geometry +586+480 bootTvTex-Text5.png ./meta/bootTvTex.tga ./meta/bootTvTex.tga
